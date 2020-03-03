@@ -51,17 +51,14 @@ module.exports.getGardenData = (params, cb) => {
 }
 
 module.exports.postGarden = (gardenData, cb) => {
-  Model.Garden.create(gardenData, (err, result) =>{
-    if (err) {
-      cb(err)
-    }
-    Model.Garden.findById(result._id).populate('plant').exec((err, result) => {
+  Model.Garden.findOneAndUpdate({name: gardenData.name}, gardenData, {upsert: true,
+    new: true }, (err, result) => {
       if (err) {
         cb(err)
       }
       cb(null, result)
-    })
-  })
+    }
+  )
 }
 
 module.exports.deleteGarden = (id, cb) => {

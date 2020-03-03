@@ -45,7 +45,7 @@ const PlantInfo = ({ plants, setPlants, getGarden, setActivePlant, activePlant, 
     })
     .then(res => res.json())
     .then(data => {
-      console.log(data)
+      console.log('dataaaaaaaaa',data)
       data.planted_on = data.planted_on.split('T')[0]
       setActivePlant(data)
       getGarden()
