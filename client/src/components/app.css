@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Muli';
+  background: #312107;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#garden-container {
+  display: flex;
+}

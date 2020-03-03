@@ -1,0 +1,15 @@
+.plant {
+  background: #fff;
+  border: 2px solid #7d4e02;
+  float: left;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 63px;
+  height: 63px;
+  text-align: center;
+  width: 63px;
+}
+
+.plant:focus {
+  outline: none;
+}

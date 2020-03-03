@@ -1,0 +1,23 @@
+#garden {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.garden-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.grow-bed-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.plant-detail-container {
+  width: 100%;
+  padding-right: 30px;
+}

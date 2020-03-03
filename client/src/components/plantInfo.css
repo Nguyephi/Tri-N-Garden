@@ -1,0 +1,12 @@
+.project-name {
+  margin-bottom: 5px;
+}
+
+.plant-name {
+  margin: 10px 0;
+}
+
+#project-form {
+  display: flex;
+  flex-direction: column;
+}

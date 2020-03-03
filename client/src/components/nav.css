@@ -1,0 +1,29 @@
+#nav-bar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: .5rem;
+  background-color: #4a7d4e;
+    box-shadow: 0px 0px 20px 16px #2529033d;
+}
+
+#nav-header {
+  font-size: 63px;
+  font-weight: 900;
+  text-shadow: 0px 6px 10px #00000087;
+  color: #422e0e;
+  word-spacing: 1rem;
+}
+
+#nav-link-list {
+  display: flex;
+  margin: auto;
+  width: 50%;
+  justify-content: space-evenly;
+  color: #422e0e;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
