@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
-const Schema = require('./schema.js')
-mongoose.connect('mongodb://localhost/triNGarden', {useNewUrlParser: true, useUnifiedTopology: true });
+const Schema = require('./schema.js');
+require('dotenv').config();
+mongoose.connect(`${process.env.MONGODB_URI}`, {useNewUrlParser: true, useUnifiedTopology: true });
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));

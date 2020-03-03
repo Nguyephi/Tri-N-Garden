@@ -1,5 +1,6 @@
 const app = require('./app.js');
 const db = require('./database')
-const port = 2220;
+require('dotenv').config();
+const { PORT } = process.env;
 
-app.listen(port, () => { console.log(`Listening on port ${port}`); });
+app.listen(PORT, () => { console.log(`Listening on port ${PORT}`); });
