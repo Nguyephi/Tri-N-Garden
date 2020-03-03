@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start-dev": "node server --watch",
+    "start": "node server --mode production",
     "build-dev": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
